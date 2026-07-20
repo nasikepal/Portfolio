@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RND_EXPERIMENTAL // INDEX - ANDROMEDA ASLAM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="js/transition.js"></script>
+</head>
+<body class="index-page">
+    <main id="swup" class="transition-fade">
+
+    <div class="index-container">
+        <!-- Header -->
+        <header class="index-header">
+            <div class="index-title-group">
+                <h1 class="index-path">C:\ANDROMEDA\PROJECTS\RND_EXPERIMENTAL\></h1>
+                <span class="index-meta">DIRECTORY EXPLORER // v6.0 // ACTIVE</span>
+            </div>
+            <a href="index.html#works" class="back-home-btn">
+                <span>[ ↩ Parent Directory ]</span>
+            </a>
+        </header>
+
+        <!-- Main Explorer Grid -->
+        <div class="explorer-grid">
+            
+            <!-- Left Column: Table of Files -->
+            <div class="directory-table-container">
+                <table class="directory-table">
+                    <thead>
+                        <tr>
+                            <th>File Name</th>
+                            <th>Date Modified</th>
+                            <th>File Size</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Row 1 -->
+                        <tr class="directory-row active" 
+                            data-title="ASCII WebGL Shader" 
+                            data-desc="Real-time GPU shader mapping camera inputs and 3D scenes directly into monochrome ASCII characters at 60fps. Explores structural character maps."
+                            data-date="2026.04.02" 
+                            data-size="84.3 KB" 
+                            data-type="GLSL Shader (.frag)" 
+                            data-status="Completed" 
+                            data-imgtext="ASCII_SHADER.FRAG">
+                            <td>
+                                <div class="file-name-cell">
+                                    <span class="file-row-icon">📄</span>
+                                    <span>ascii_webgl_shader.frag</span>
+                                </div>
+                            </td>
+                            <td>2026.04.02</td>
+                            <td>84.3 KB</td>
+                            <td><span class="file-status-tag completed">Completed</span></td>
+                        </tr>
+
+                        <!-- Row 2 -->
+                        <tr class="directory-row" 
+                            data-title="Glitch Shader Pack" 
+                            data-desc="Suite of post-processing filters implementing screen pixelation, chromatic aberrations, and scanline interference offsets. Ideal for digital art pipelines."
+                            data-date="2026.05.15" 
+                            data-size="14.8 MB" 
+                            data-type="JavaScript Module (.js)" 
+                            data-status="Completed" 
+                            data-imgtext="GLITCH_SHADERS.JS">
+                            <td>
+                                <div class="file-name-cell">
+                                    <span class="file-row-icon">📄</span>
+                                    <span>glitch_shader_pack.js</span>
+                                </div>
+                            </td>
+                            <td>2026.05.15</td>
+                            <td>14.8 MB</td>
+                            <td><span class="file-status-tag completed">Completed</span></td>
+                        </tr>
+
+                        <!-- Row 3 -->
+                        <tr class="directory-row" 
+                            data-title="Noise Topography Gen" 
+                            data-desc="Procedural terrain heightmap builder written in vanilla JS, utilizing fractional Brownian motion to compute real-time structural coordinates."
+                            data-date="2026.05.30" 
+                            data-size="124.0 KB" 
+                            data-type="JavaScript Script (.js)" 
+                            data-status="Completed" 
+                            data-imgtext="NOISE_GEN.JS">
+                            <td>
+                                <div class="file-name-cell">
+                                    <span class="file-row-icon">📄</span>
+                                    <span>noise_topography_gen.js</span>
+                                </div>
+                            </td>
+                            <td>2026.05.30</td>
+                            <td>124.0 KB</td>
+                            <td><span class="file-status-tag completed">Completed</span></td>
+                        </tr>
+
+                        <!-- Row 4 -->
+                        <tr class="directory-row" 
+                            data-title="Fluid Physics Simulator" 
+                            data-desc="2D WebGL fluid dynamics sandbox utilizing Smoothed Particle Hydrodynamics (SPH). Supports gravity adjustments and coordinate tracking mouse events."
+                            data-date="2026.06.12" 
+                            data-size="2.4 MB" 
+                            data-type="HTML5 Document (.html)" 
+                            data-status="Archived" 
+                            data-imgtext="FLUID_SIM.HTML">
+                            <td>
+                                <div class="file-name-cell">
+                                    <span class="file-row-icon">📄</span>
+                                    <span>fluid_physics_sandbox.html</span>
+                                </div>
+                            </td>
+                            <td>2026.06.12</td>
+                            <td>2.4 MB</td>
+                            <td><span class="file-status-tag archived">Archived</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Right Column: Sticky Preview Panel -->
+            <aside class="preview-panel">
+                <div class="preview-media-placeholder">
+                    <!-- Corner Brackets -->
+                    <div class="photo-corner tl">┌</div>
+                    <div class="photo-corner tr">┐</div>
+                    <div class="photo-corner bl">└</div>
+                    <div class="photo-corner br">┘</div>
+                    <span class="preview-placeholder-text" id="preview-img-text">ASCII_SHADER.FRAG</span>
+                </div>
+
+                <div class="preview-info">
+                    <h3 class="preview-title" id="preview-title">ASCII WebGL Shader</h3>
+                    <p class="preview-desc" id="preview-desc">
+                        Real-time GPU shader mapping camera inputs and 3D scenes directly into monochrome ASCII characters at 60fps. Explores structural character maps.
+                    </p>
+                    
+                    <div class="preview-specs">
+                        <div class="preview-spec-row">
+                            <span class="preview-spec-label">Date:</span>
+                            <span class="preview-spec-val" id="preview-date">2026.04.02</span>
+                        </div>
+                        <div class="preview-spec-row">
+                            <span class="preview-spec-label">Size:</span>
+                            <span class="preview-spec-val" id="preview-size">84.3 KB</span>
+                        </div>
+                        <div class="preview-spec-row">
+                            <span class="preview-spec-label">Type:</span>
+                            <span class="preview-spec-val" id="preview-type">GLSL Shader (.frag)</span>
+                        </div>
+                        <div class="preview-spec-row">
+                            <span class="preview-spec-label">Status:</span>
+                            <span id="preview-status" class="file-status-tag completed">Completed</span>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor" id="custom-cursor">
+        <div class="cursor-dot"></div>
+        <div class="cursor-ring"></div>
+        <div class="cursor-coords">[ X: 000.0 | Y: 000.0 ]</div>
+        <div class="cursor-trail-dot"></div>
+        <div class="cursor-trail-dot"></div>
+        <div class="cursor-trail-dot"></div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const rows = document.querySelectorAll('.directory-row');
+            const previewTitle = document.getElementById('preview-title');
+            const previewDesc = document.getElementById('preview-desc');
+            const previewDate = document.getElementById('preview-date');
+            const previewSize = document.getElementById('preview-size');
+            const previewType = document.getElementById('preview-type');
+            const previewStatus = document.getElementById('preview-status');
+            const previewImgText = document.getElementById('preview-img-text');
+
+            rows.forEach(row => {
+                row.addEventListener('mouseenter', () => {
+                    rows.forEach(r => r.classList.remove('active'));
+                    row.classList.add('active');
+
+                    const title = row.dataset.title;
+                    const desc = row.dataset.desc;
+                    const date = row.dataset.date;
+                    const size = row.dataset.size;
+                    const type = row.dataset.type;
+                    const status = row.dataset.status;
+                    const imgText = row.dataset.imgtext;
+
+                    previewTitle.textContent = title;
+                    previewDesc.textContent = desc;
+                    previewDate.textContent = date;
+                    previewSize.textContent = size;
+                    previewType.textContent = type;
+                    previewImgText.textContent = imgText;
+
+                    previewStatus.textContent = status;
+                    previewStatus.className = 'file-status-tag ' + status.toLowerCase();
+                });
+            });
+        });
+    </script>
+    </main>
+</body>
+</html>

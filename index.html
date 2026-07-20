@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANDROMEDA ASLAM — 3D Artist & Motion Designer</title>
+    <meta name="description" content="Portfolio of Andromeda Aslam — 3D Artist & Motion Designer specializing in visual storytelling, motion graphics, and digital art.">
+    <meta property="og:title" content="ANDROMEDA ASLAM — 3D Artist & Motion Designer">
+    <meta property="og:description" content="3D Artist & Motion Designer Portfolio">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+</head>
+<body>
+    <main id="swup" class="transition-fade">
+
+    <!-- ═══════════════════ NAVIGATION ═══════════════════ -->
+    <nav id="navbar" aria-label="Main navigation">
+        <div class="nav-container">
+            <a href="#" class="nav-logo" id="nav-logo">[ ANDROMEDA.A ]</a>
+            <div class="nav-links" id="nav-links">
+                <a href="#works" class="nav-link" data-section="works">WORK</a>
+                <a href="#about" class="nav-link" data-section="about">ABOUT</a>
+                <a href="#contact" class="nav-link" data-section="contact">CONTACT</a>
+            </div>
+            <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle menu" aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ═══════════════════ MOBILE MENU ═══════════════════ -->
+    <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
+        <div class="mobile-menu-content">
+            <a href="#works" class="mobile-link">WORK</a>
+            <a href="#about" class="mobile-link">ABOUT</a>
+            <a href="#contact" class="mobile-link">CONTACT</a>
+        </div>
+        <div class="mobile-menu-ascii" aria-hidden="true">
+<pre>
+╔═══════════════╗
+║  ┌───────┐    ║
+║  │ MENU  │    ║
+║  └───────┘    ║
+╚═══════════════╝
+</pre>
+        </div>
+    </div>
+
+    <!-- ═══════════════════ HERO SECTION ═══════════════════ -->
+    <section id="hero" class="hero">
+        <!-- Photo Background Layer (Tech Grid Tiles) -->
+        <div class="hero-photo-layer">
+            <div class="hero-grid-tiles" id="hero-grid-tiles"></div>
+        </div>
+
+        <!-- Top Overlay Metadata Bar -->
+        <div class="hero-metadata-bar" aria-hidden="true">
+            <span class="meta-item">ANDROMEDA ASLAM™ // CREATIVE ARCHITECT</span>
+            <span class="meta-item">DESIGN STUDIO</span>
+            <span class="meta-item">2026.06</span>
+            <span class="meta-item">PORTFOLIO v6.0</span>
+            <span class="meta-item">STATUS_ACTIVE</span>
+            <span class="meta-item">N°008</span>
+        </div>
+
+        <!-- SVG Grid Wavy Coordinate Path -->
+        <svg class="hero-grid-track" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+            <path id="hero-grid-path" d="M 0,50 L 100,50" fill="none" stroke="rgba(255, 255, 255, 0.45)" stroke-width="0.3" />
+            <circle id="hero-grid-node1" cx="30" cy="50" r="0.6" fill="#ffffff" />
+            <circle id="hero-grid-node2" cx="65" cy="50" r="0.6" fill="#ffffff" />
+            <circle id="hero-grid-scanner" cx="0" cy="50" r="0.8" fill="#ff4d2a" style="filter: drop-shadow(0 0 2px #ff4d2a);" />
+        </svg>
+
+        <!-- Headline Text Layer -->
+        <div class="hero-text-layer" id="hero-text-layer">
+            <div class="hero-text-content">
+                <div class="hero-ascii-top" aria-hidden="true">
+                    <span class="ascii-tracery-line" data-ascii="tracery">┌──────────────────────────────────┐</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="title-line" data-line="1">HELLO IM</span>
+                    <span class="title-line" data-line="2">ANDROMEDA</span>
+                </h1>
+                <p class="hero-subtitle">3D Artist & Motion Designer</p>
+                <div class="hero-ascii-bottom" aria-hidden="true">
+                    <span class="ascii-tracery-line" data-ascii="tracery">└──────────────────────────────────┘</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Floating Microtext Accents -->
+        <div class="hero-ascii-accents" aria-hidden="true" id="hero-ascii-accents">
+            <span class="floating-ascii" style="--x: 10%; --y: 20%;">[ SYS.LOG_v4.0 ]</span>
+            <span class="floating-ascii" style="--x: 85%; --y: 15%;">[ COORD.X_450 ]</span>
+            <span class="floating-ascii" style="--x: 75%; --y: 70%;">[ STATUS_ACTIVE ]</span>
+            <span class="floating-ascii" style="--x: 15%; --y: 75%;">[ REF.N°008 ]</span>
+            <span class="floating-ascii" style="--x: 50%; --y: 10%;">[ SCALE_1.000 ]</span>
+            <span class="floating-ascii" style="--x: 90%; --y: 50%;">[ MEM.HEX_7FFF ]</span>
+            <span class="floating-ascii" style="--x: 5%;  --y: 55%;">[ TYPE_MOTION_3D ]</span>
+            <span class="floating-ascii" style="--x: 60%; --y: 85%;">[ MODE: RETRO ]</span>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="hero-scroll-indicator" id="scroll-indicator">
+            <span class="scroll-text">SCROLL</span>
+            <div class="scroll-line-container">
+                <div class="scroll-line"></div>
+            </div>
+        </div>
+
+        <!-- Transition Overlay (Pixelate & Blur) -->
+
+    </section>
+
+
+
+    <!-- ═══════════════════ MARQUEE ═══════════════════ -->
+    <section id="marquee" class="marquee-section" aria-hidden="true">
+        <!-- Background Video for Masking -->
+        <video class="marquee-video" autoplay loop muted playsinline>
+            <source src="assets/video/showreel.mp4" type="video/mp4">
+        </video>
+        
+        <!-- Multiply Overlay for Text Masking -->
+        <div class="marquee-overlay">
+            <div class="marquee-track">
+                <div class="marquee-content">
+                    <span>CREATIVE</span><span class="marquee-dot">✦</span>
+                    <span>3D ARTIST</span><span class="marquee-dot">✦</span>
+                    <span>MOTION DESIGNER</span><span class="marquee-dot">✦</span>
+                    <span>VISUAL STORYTELLER</span><span class="marquee-dot">✦</span>
+                </div>
+                <div class="marquee-content">
+                    <span>CREATIVE</span><span class="marquee-dot">✦</span>
+                    <span>3D ARTIST</span><span class="marquee-dot">✦</span>
+                    <span>MOTION DESIGNER</span><span class="marquee-dot">✦</span>
+                    <span>VISUAL STORYTELLER</span><span class="marquee-dot">✦</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════ ABOUT SECTION (BRUTALIST) ═══════════════════ -->
+    <section id="about" class="about-brutalist-section">
+        
+        <!-- About Accordion -->
+        <div class="about-accordion border-top">
+            
+            <!-- Item 1: Executive Summary -->
+            <div class="about-accordion-item border-bottom" data-reveal>
+                <button class="about-accordion-header">
+                    EXECUTIVE SUMMARY
+                </button>
+                <div class="about-accordion-content">
+                    <div class="content-inner">
+                        <p>
+                            Andromeda Aslam is an Indonesian CG Generalist and visual creative whose work sits at the intersection of design, technology, and visual storytelling. Driven by a curiosity for creating immersive visual experiences, he has explored a wide range of creative disciplines, including CG Product Visualization, Visual Merchandising, Motion Design, Art Direction, and Event Production.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 2: Professional Experience -->
+            <div class="about-accordion-item border-bottom" data-reveal>
+                <button class="about-accordion-header">
+                    PROFESSIONAL EXPERIENCE
+                </button>
+                <div class="about-accordion-content">
+                    <div class="content-inner">
+                        <ul class="experience-list">
+                            <li>Production Director (FEUGEE, Malang, Indonesia)</li>
+                            <li>3d Generalist (Magnates Media, New Jersey, US)</li>
+                            <li>Multimedia Designer (Ajaib, Jakarta, Indonesia)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 3: Awards -->
+            <div class="about-accordion-item border-bottom" data-reveal>
+                <button class="about-accordion-header">
+                    AWARDS
+                </button>
+                <div class="about-accordion-content">
+                    <div class="content-inner">
+                        <ul class="experience-list">
+                            <li>Artist Nominee Illuminated Vision Cypress College Media Art California 2024</li>
+                            <li>Artist Nominee Void Vision Swarnaloka Journey 2024</li>
+                            <li>Winner Youth Entrepreneurship Brawijaya 2022</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 4: Technical Arsenal -->
+            <div class="about-accordion-item border-bottom" data-reveal>
+                <button class="about-accordion-header">
+                    TECHNICAL ARSENAL
+                </button>
+                <div class="about-accordion-content">
+                    <div class="content-inner brutalist-skills-icons">
+                        <img src="assets/icons/blender.svg" alt="Blender" class="software-icon" title="Blender">
+                        <img src="assets/icons/cinema4d.svg" alt="Cinema 4D" class="software-icon" title="Cinema 4D">
+                        <div class="software-icon adobe-icon" title="After Effects">Ae</div>
+                        <div class="software-icon adobe-icon" title="Illustrator">Ai</div>
+                        <img src="assets/icons/houdini.svg" alt="Houdini" class="software-icon" title="Houdini">
+                        <img src="assets/icons/unrealengine.svg" alt="Unreal Engine" class="software-icon" title="Unreal Engine">
+                        <div class="software-icon adobe-icon" title="Substance 3D">Pt</div>
+                        <div class="software-icon adobe-icon" title="Photoshop">Ps</div>
+                        <img src="assets/icons/marvelousdesigner.svg" alt="Marvelous Designer" class="software-icon" title="Marvelous Designer">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ═══════════════════ WORKS SECTION ═══════════════════ -->
+    <section id="works" class="works-section">
+        <div class="section-container">
+            <!-- Section Label -->
+            <div class="section-label" data-reveal>
+                SELECTED WORKS
+            </div>
+
+            <!-- Showreel Container -->
+            <div class="showreel-container" data-reveal>
+                <div class="showreel-video-placeholder">
+                    <!-- Corner Brackets -->
+                    <div class="photo-corner tl">┌</div>
+                    <div class="photo-corner tr">┐</div>
+                    <div class="photo-corner bl">└</div>
+                    <div class="photo-corner br">┘</div>
+                    
+                    <!-- High Quality Direct Video Embed -->
+                    <video style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 8px; object-fit: cover;" autoplay loop muted playsinline controls>
+                        <source src="assets/video/AUD_sowreeeellllll_1.mp4" type="video/mp4">
+                    </video>
+                    <!-- Inner Watermark / Specs -->
+                    <div class="showreel-watermark">
+                        <span>[ RUNTIME: 01:24 ]</span>
+                        <span>[ RESOLUTION: 4K_UHD ]</span>
+                    </div>
+
+                </div>
+            </div>
+        </div> <!-- Close section-container to allow full-width folder cabinet -->
+
+                <!-- Brutalist Flex Accordion (DISABLED) -->
+        <div class="brutalist-accordion" data-reveal style="display: none;">
+            
+            <!-- Panel 01 -->
+            <a href="3d-index.html" class="accordion-panel panel-1">
+                <div class="panel-bg" style="background-image: url('assets/bg/cassette_bg.png');"></div>
+                <div class="panel-overlay"></div>
+                
+                <div class="panel-content">
+                    <div class="panel-header">
+                        <span class="track-num">TRACK.01</span>
+                        <div class="status-indicator active">
+                            <span class="dot blink"></span>
+                            <span>ACTIVE</span>
+                        </div>
+                    </div>
+                    
+                    <h3 class="panel-title">3D_MODELING</h3>
+                    
+                    <div class="panel-footer">
+                        <span class="file-name">SYS.3D_ART_INDEX.SYS</span>
+                        <svg class="panel-icon" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="50" cy="50" r="30"/>
+                            <circle cx="50" cy="50" r="10" fill="currentColor"/>
+                            <line x1="50" y1="0" x2="50" y2="20"/>
+                            <line x1="50" y1="80" x2="50" y2="100"/>
+                            <line x1="0" y1="50" x2="20" y2="50"/>
+                            <line x1="80" y1="50" x2="100" y2="50"/>
+                        </svg>
+                    </div>
+                </div>
+            </a>
+            
+            <!-- Panel 02 -->
+            <a href="motion-index.html" class="accordion-panel panel-2">
+                <div class="panel-bg" style="background-image: url('assets/bg/cassette_bg.png');"></div>
+                <div class="panel-overlay"></div>
+                
+                <div class="panel-content">
+                    <div class="panel-header">
+                        <span class="track-num">TRACK.02</span>
+                        <div class="status-indicator">
+                            <span class="dot"></span>
+                            <span>STANDBY</span>
+                        </div>
+                    </div>
+                    
+                    <h3 class="panel-title">MOTION_DESIGN</h3>
+                    
+                    <div class="panel-footer">
+                        <span class="file-name">SYS.MOTION_INDEX.SYS</span>
+                        <svg class="panel-icon" viewBox="0 0 100 100" fill="currentColor">
+                            <path d="M50 0 C50 40 60 50 100 50 C60 50 50 60 50 100 C50 60 40 50 0 50 C40 50 50 40 50 0 Z"/>
+                        </svg>
+                    </div>
+                </div>
+            </a>
+            
+            <!-- Panel 03 -->
+            <a href="vfx-index.html" class="accordion-panel panel-3">
+                <div class="panel-bg" style="background-image: url('assets/bg/cassette_bg.png');"></div>
+                <div class="panel-overlay"></div>
+                
+                <div class="panel-content">
+                    <div class="panel-header">
+                        <span class="track-num">TRACK.03</span>
+                        <div class="status-indicator">
+                            <span class="dot"></span>
+                            <span>STANDBY</span>
+                        </div>
+                    </div>
+                    
+                    <h3 class="panel-title">VISUAL_EFFECTS</h3>
+                    
+                    <div class="panel-footer">
+                        <span class="file-name">SYS.VFX_INDEX.SYS</span>
+                        <svg class="panel-icon" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2">
+                            <ellipse cx="50" cy="50" rx="45" ry="15" transform="rotate(30 50 50)"/>
+                            <ellipse cx="50" cy="50" rx="45" ry="15" transform="rotate(90 50 50)"/>
+                            <ellipse cx="50" cy="50" rx="45" ry="15" transform="rotate(150 50 50)"/>
+                        </svg>
+                    </div>
+                </div>
+            </a>
+            
+            <!-- Panel 04 -->
+            <a href="creative-index.html" class="accordion-panel panel-4">
+                <div class="panel-bg" style="background-image: url('assets/bg/cassette_bg.png');"></div>
+                <div class="panel-overlay"></div>
+                
+                <div class="panel-content">
+                    <div class="panel-header">
+                        <span class="track-num">TRACK.04</span>
+                        <div class="status-indicator">
+                            <span class="dot"></span>
+                            <span>STANDBY</span>
+                        </div>
+                    </div>
+                    
+                    <h3 class="panel-title">CREATIVE_CODING</h3>
+                    
+                    <div class="panel-footer">
+                        <span class="file-name">SYS.CODE_INDEX.SYS</span>
+                        <svg class="panel-icon" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="20" y="20" width="60" height="60" />
+                            <rect x="35" y="35" width="30" height="30" />
+                            <line x1="20" y1="20" x2="35" y2="35"/>
+                            <line x1="80" y1="20" x2="65" y2="35"/>
+                            <line x1="20" y1="80" x2="35" y2="65"/>
+                            <line x1="80" y1="80" x2="65" y2="65"/>
+                        </svg>
+                    </div>
+                </div>
+            </a>
+            
+        </div>
+    </section>
+
+
+        <!-- Marquee Header -->
+        <div class="marquee-wrapper border-top border-bottom">
+            <div class="marquee-content client-logos">
+                <img src="assets/icons/client.svg" alt="Previous Clients" class="client-logos-img">
+                <!-- Duplicate for seamless scroll -->
+                <img src="assets/icons/client.svg" alt="Previous Clients" class="client-logos-img">
+            </div>
+        </div>
+
+
+    <!-- ═══════════════════ CONTACT SECTION ═══════════════════ -->
+    <section id="contact" class="contact-section">
+        <!-- 3D Balloon Graphics -->
+        <div class="contact-graphics" aria-hidden="true">
+            <img src="assets/images/contact_bg_graphic.png" class="contact-balloon left" alt="">
+        </div>
+        
+        <div class="section-container">
+            <!-- Section Label -->
+            <div class="section-label" data-reveal>
+                CONTACT
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-text" data-reveal>
+                    <h2 class="contact-headline">
+                        Let's create<br>
+                        <span class="text-accent">something amazing</span>
+                    </h2>
+                    <p class="contact-description">
+                        Have a project in mind? I'd love to hear about it. 
+                        Let's collaborate and bring your vision to life.
+                    </p>
+                    <a href="mailto:andromedaaslam@gmail.com" class="contact-email" id="contact-email">
+                        andromedaaslam@gmail.com
+                    </a>
+                </div>
+
+                <div class="contact-form-wrapper" data-reveal>
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="form-name" name="name" required autocomplete="name">
+                            <label for="form-name">Your Name</label>
+                            <div class="form-line"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="form-email" name="email" required autocomplete="email">
+                            <label for="form-email">Your Email</label>
+                            <div class="form-line"></div>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="form-message" name="message" rows="4" required></textarea>
+                            <label for="form-message">Your Message</label>
+                            <div class="form-line"></div>
+                        </div>
+                        <button type="submit" class="form-submit" id="form-submit">
+                            <span class="submit-text">SEND MESSAGE</span>
+                            <span class="submit-arrow">→</span>
+                        </button>
+                    </form>
+
+                    <!-- ASCII Form Border -->
+                    <div class="form-ascii-border" aria-hidden="true">
+                        <span class="corner tl">┌</span>
+                        <span class="corner tr">┐</span>
+                        <span class="corner bl">└</span>
+                        <span class="corner br">┘</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Social Links -->
+            <div class="social-links" data-reveal>
+                <a href="https://www.instagram.com/andro_aslam/" class="social-link" id="social-instagram" target="_blank" rel="noopener">
+                    <span class="social-bracket">[</span> Instagram <span class="social-bracket">]</span>
+                </a>
+                <a href="https://www.behance.net/andromeda3" class="social-link" id="social-behance" target="_blank" rel="noopener">
+                    <span class="social-bracket">[</span> Behance <span class="social-bracket">]</span>
+                </a>
+                <a href="#" class="social-link" id="social-artstation" target="_blank" rel="noopener">
+                    <span class="social-bracket">[</span> ArtStation <span class="social-bracket">]</span>
+                </a>
+                <a href="https://www.linkedin.com/in/andromeda-aslam-54ab01220/" class="social-link" id="social-linkedin" target="_blank" rel="noopener">
+                    <span class="social-bracket">[</span> LinkedIn <span class="social-bracket">]</span>
+                </a>
+                
+                <button class="footer-top" id="back-to-top" aria-label="Back to top">↑ TOP</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════ CUSTOM CURSOR ═══════════════════ -->
+    <div class="custom-cursor" id="custom-cursor">
+        <div class="cursor-dot"></div>
+        <div class="cursor-ring"></div>
+        <div class="cursor-coords">[ X: 000.0 | Y: 000.0 ]</div>
+        <div class="cursor-trail-dot"></div>
+        <div class="cursor-trail-dot"></div>
+        <div class="cursor-trail-dot"></div>
+    </div>
+
+    <!-- Hidden SVG Filters for Grid Effects -->
+    <svg style="position: absolute; width: 0; height: 0; overflow: hidden;" aria-hidden="true">
+        <defs>
+            <!-- Thermal Heatmap Filter mapping grayscale intensities to blue-red-yellow-white colors -->
+            <filter id="heatmap-filter">
+                <feColorMatrix type="matrix" values="0.2126 0.7152 0.0722 0 0
+                                                     0.2126 0.7152 0.0722 0 0
+                                                     0.2126 0.7152 0.0722 0 0
+                                                     0      0      0      1 0" result="gray"/>
+                <feComponentTransfer in="gray">
+                    <feFuncR type="table" tableValues="0.0 0.1 0.8 1.0 1.0"/>
+                    <feFuncG type="table" tableValues="0.0 0.0 0.1 0.7 1.0"/>
+                    <feFuncB type="table" tableValues="0.5 0.8 0.2 0.0 0.8"/>
+                </feComponentTransfer>
+            </filter>
+ 
+            <!-- Technical Grayscale Depth-map filter mapping brightness to high-contrast inversion -->
+            <filter id="depth-filter">
+                <feColorMatrix type="matrix" values="0.2126 0.7152 0.0722 0 0
+                                                     0.2126 0.7152 0.0722 0 0
+                                                     0.2126 0.7152 0.0722 0 0
+                                                     0      0      0      1 0" result="gray"/>
+                <feComponentTransfer in="gray">
+                    <feFuncR type="table" tableValues="0.95 0.6 0.15 0.0"/>
+                    <feFuncG type="table" tableValues="0.95 0.6 0.15 0.0"/>
+                    <feFuncB type="table" tableValues="0.95 0.6 0.15 0.0"/>
+                </feComponentTransfer>
+            </filter>
+        </defs>
+    </svg>
+    </main>
+
+    <!-- ═══════════════════ SCRIPTS ═══════════════════ -->
+    <script src="js/transition.js"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.39/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="js/ascii-tracery.js"></script>
+    <script src="js/hero-tiles.js"></script>
+    <script src="js/marquee-glitch.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
+
+

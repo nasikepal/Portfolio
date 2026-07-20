@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOTION_DESIGN // INDEX - ANDROMEDA ASLAM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="js/transition.js"></script>
+</head>
+<body class="index-page">
+    <main id="swup" class="transition-fade">
+
+    <div class="index-container">
+        <!-- Header -->
+        <header class="index-header">
+            <div class="index-title-group">
+                <h1 class="index-path">C:\ANDROMEDA\PROJECTS\MOTION_DESIGN\></h1>
+                <span class="index-meta">DIRECTORY EXPLORER // v5.0 // ACTIVE</span>
+            </div>
+            <a href="index.html#works" class="back-home-btn">
+                <span>[ ↩ Parent Directory ]</span>
+            </a>
+        </header>
+
+        <!-- Main Explorer Grid -->
+        <div class="explorer-grid">
+            
+            <!-- Left Column: Table of Files -->
+            <div class="directory-table-container">
+                <table class="directory-table">
+                    <thead>
+                        <tr>
+                            <th>File Name</th>
+                            <th>Date Modified</th>
+                            <th>File Size</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Row 1 -->
+                        <tr class="directory-row active" 
+                            data-title="Kinetic Flow" 
+                            data-desc="High-speed typography and layout animation exploring kinetic physics, tempo-ramping, and high-impact visual cuts."
+                            data-date="2026.03.18" 
+                            data-size="28.4 MB" 
+                            data-type="Video File (MP4)" 
+                            data-status="Completed" 
+                            data-imgtext="KINETIC_FLOW.MP4">
+                            <td>
+                                <div class="file-name-cell">
+                                    <span class="file-row-icon">📄</span>
+                                    <span>kinetic_flow.mp4</span>
+                                </div>
+                            </td>
+                            <td>2026.03.18</td>
+                            <td>28.4 MB</td>
+                            <td><span class="file-status-tag completed">Completed</span></td>
+                        </tr>
+
+                        <!-- Row 2 -->
+                        <tr class="directory-row" 
+                            data-title="Fluid Motion" 
+                            data-desc="Simulation of fluid dynamics and splash animations, exploring viscosity loops and surface tension renderings."
+                            data-date="2026.04.05" 
+                            data-size="94.1 MB" 
+                            data-type="Cinema4D Scene (.c4d)" 
+                            data-status="Completed" 
+                            data-imgtext="FLUID_MOTION.C4D">
+                            <td>
+                                <div class="file-name-cell">
+                                    <span class="file-row-icon">📄</span>
+                                    <span>fluid_motion_simulation.c4d</span>
+                                </div>
+                            </td>
+                            <td>2026.04.05</td>
+                            <td>94.1 MB</td>
+                            <td><span class="file-status-tag completed">Completed</span></td>
+                        </tr>
+
+                        <!-- Row 3 -->
+                        <tr class="directory-row" 
+                            data-title="Typography Ident" 
+                            data-desc="Brand indent animation featuring multi-layered ASCII letter layouts and glitching code blocks in vector format."
+                            data-date="2026.05.02" 
+                            data-size="14.2 MB" 
+                            data-type="AfterEffects Project (.aep)" 
+                            data-status="Archived" 
+                            data-imgtext="IDENT_MOTION.AEP">
+                            <td>
+                                <div class="file-name-cell">
+                                    <span class="file-row-icon">📄</span>
+                                    <span>typography_ident_ae.aep</span>
+                                </div>
+                            </td>
+                            <td>2026.05.02</td>
+                            <td>14.2 MB</td>
+                            <td><span class="file-status-tag archived">Archived</span></td>
+                        </tr>
+
+                        <!-- Row 4 -->
+                        <tr class="directory-row" 
+                            data-title="Glitch Dynamics" 
+                            data-desc="Experimental glitch art sequence generated with pixel-sorting algorithms and audio-reactive displacement loops."
+                            data-date="2026.06.10" 
+                            data-size="210.5 MB" 
+                            data-type="Video File (ProRes)" 
+                            data-status="Completed" 
+                            data-imgtext="GLITCH_DYNAMICS.MOV">
+                            <td>
+                                <div class="file-name-cell">
+                                    <span class="file-row-icon">📄</span>
+                                    <span>glitch_dynamics_comp.mov</span>
+                                </div>
+                            </td>
+                            <td>2026.06.10</td>
+                            <td>210.5 MB</td>
+                            <td><span class="file-status-tag completed">Completed</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Right Column: Sticky Preview Panel -->
+            <aside class="preview-panel">
+                <div class="preview-media-placeholder">
+                    <!-- Corner Brackets -->
+                    <div class="photo-corner tl">┌</div>
+                    <div class="photo-corner tr">┐</div>
+                    <div class="photo-corner bl">└</div>
+                    <div class="photo-corner br">┘</div>
+                    <span class="preview-placeholder-text" id="preview-img-text">KINETIC_FLOW.MP4</span>
+                </div>
+
+                <div class="preview-info">
+                    <h3 class="preview-title" id="preview-title">Kinetic Flow</h3>
+                    <p class="preview-desc" id="preview-desc">
+                        High-speed typography and layout animation exploring kinetic physics, tempo-ramping, and high-impact visual cuts.
+                    </p>
+                    
+                    <div class="preview-specs">
+                        <div class="preview-spec-row">
+                            <span class="preview-spec-label">Date:</span>
+                            <span class="preview-spec-val" id="preview-date">2026.03.18</span>
+                        </div>
+                        <div class="preview-spec-row">
+                            <span class="preview-spec-label">Size:</span>
+                            <span class="preview-spec-val" id="preview-size">28.4 MB</span>
+                        </div>
+                        <div class="preview-spec-row">
+                            <span class="preview-spec-label">Type:</span>
+                            <span class="preview-spec-val" id="preview-type">Video File (MP4)</span>
+                        </div>
+                        <div class="preview-spec-row">
+                            <span class="preview-spec-label">Status:</span>
+                            <span id="preview-status" class="file-status-tag completed">Completed</span>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor" id="custom-cursor">
+        <div class="cursor-dot"></div>
+        <div class="cursor-ring"></div>
+        <div class="cursor-coords">[ X: 000.0 | Y: 000.0 ]</div>
+        <div class="cursor-trail-dot"></div>
+        <div class="cursor-trail-dot"></div>
+        <div class="cursor-trail-dot"></div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const rows = document.querySelectorAll('.directory-row');
+            const previewTitle = document.getElementById('preview-title');
+            const previewDesc = document.getElementById('preview-desc');
+            const previewDate = document.getElementById('preview-date');
+            const previewSize = document.getElementById('preview-size');
+            const previewType = document.getElementById('preview-type');
+            const previewStatus = document.getElementById('preview-status');
+            const previewImgText = document.getElementById('preview-img-text');
+
+            rows.forEach(row => {
+                row.addEventListener('mouseenter', () => {
+                    rows.forEach(r => r.classList.remove('active'));
+                    row.classList.add('active');
+
+                    const title = row.dataset.title;
+                    const desc = row.dataset.desc;
+                    const date = row.dataset.date;
+                    const size = row.dataset.size;
+                    const type = row.dataset.type;
+                    const status = row.dataset.status;
+                    const imgText = row.dataset.imgtext;
+
+                    if (previewTitle) previewTitle.textContent = title;
+                    if (previewDesc) previewDesc.textContent = desc;
+                    if (previewDate) previewDate.textContent = date;
+                    if (previewSize) previewSize.textContent = size;
+                    if (previewType) previewType.textContent = type;
+                    if (previewStatus) {
+                        previewStatus.textContent = status;
+                        previewStatus.className = 'file-status-tag ' + status.toLowerCase();
+                    }
+                    if (previewImgText) previewImgText.textContent = imgText;
+                });
+            });
+        });
+    </script>
+    </main>
+</body>
+</html>

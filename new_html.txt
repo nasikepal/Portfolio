@@ -1,0 +1,117 @@
+        <!-- Brutalist Flex Accordion -->
+        <div class="brutalist-accordion" data-reveal>
+            
+            <!-- Panel 01 -->
+            <a href="3d-index.html" class="accordion-panel panel-1">
+                <div class="panel-bg" style="background-image: url('assets/bg/panel_1.png');"></div>
+                <div class="panel-overlay"></div>
+                
+                <div class="panel-content">
+                    <div class="panel-header">
+                        <span class="track-num">TRACK.01</span>
+                        <div class="status-indicator active">
+                            <span class="dot blink"></span>
+                            <span>ACTIVE</span>
+                        </div>
+                    </div>
+                    
+                    <h3 class="panel-title">3D_MODELING</h3>
+                    
+                    <div class="panel-footer">
+                        <span class="file-name">SYS.3D_ART_INDEX.SYS</span>
+                        <svg class="panel-icon" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="50" cy="50" r="30"/>
+                            <circle cx="50" cy="50" r="10" fill="currentColor"/>
+                            <line x1="50" y1="0" x2="50" y2="20"/>
+                            <line x1="50" y1="80" x2="50" y2="100"/>
+                            <line x1="0" y1="50" x2="20" y2="50"/>
+                            <line x1="80" y1="50" x2="100" y2="50"/>
+                        </svg>
+                    </div>
+                </div>
+            </a>
+            
+            <!-- Panel 02 -->
+            <a href="motion-index.html" class="accordion-panel panel-2">
+                <div class="panel-bg" style="background-image: url('assets/bg/panel_2.png');"></div>
+                <div class="panel-overlay"></div>
+                
+                <div class="panel-content">
+                    <div class="panel-header">
+                        <span class="track-num">TRACK.02</span>
+                        <div class="status-indicator">
+                            <span class="dot"></span>
+                            <span>STANDBY</span>
+                        </div>
+                    </div>
+                    
+                    <h3 class="panel-title">MOTION_DESIGN</h3>
+                    
+                    <div class="panel-footer">
+                        <span class="file-name">SYS.MOTION_INDEX.SYS</span>
+                        <svg class="panel-icon" viewBox="0 0 100 100" fill="currentColor">
+                            <path d="M50 0 C50 40 60 50 100 50 C60 50 50 60 50 100 C50 60 40 50 0 50 C40 50 50 40 50 0 Z"/>
+                        </svg>
+                    </div>
+                </div>
+            </a>
+            
+            <!-- Panel 03 -->
+            <a href="vfx-index.html" class="accordion-panel panel-3">
+                <div class="panel-bg" style="background-image: url('assets/bg/panel_3.png');"></div>
+                <div class="panel-overlay"></div>
+                
+                <div class="panel-content">
+                    <div class="panel-header">
+                        <span class="track-num">TRACK.03</span>
+                        <div class="status-indicator">
+                            <span class="dot"></span>
+                            <span>STANDBY</span>
+                        </div>
+                    </div>
+                    
+                    <h3 class="panel-title">VISUAL_EFFECTS</h3>
+                    
+                    <div class="panel-footer">
+                        <span class="file-name">SYS.VFX_INDEX.SYS</span>
+                        <svg class="panel-icon" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2">
+                            <ellipse cx="50" cy="50" rx="45" ry="15" transform="rotate(30 50 50)"/>
+                            <ellipse cx="50" cy="50" rx="45" ry="15" transform="rotate(90 50 50)"/>
+                            <ellipse cx="50" cy="50" rx="45" ry="15" transform="rotate(150 50 50)"/>
+                        </svg>
+                    </div>
+                </div>
+            </a>
+            
+            <!-- Panel 04 -->
+            <a href="creative-index.html" class="accordion-panel panel-4">
+                <div class="panel-bg" style="background-image: url('assets/bg/panel_4.png');"></div>
+                <div class="panel-overlay"></div>
+                
+                <div class="panel-content">
+                    <div class="panel-header">
+                        <span class="track-num">TRACK.04</span>
+                        <div class="status-indicator">
+                            <span class="dot"></span>
+                            <span>STANDBY</span>
+                        </div>
+                    </div>
+                    
+                    <h3 class="panel-title">CREATIVE_CODING</h3>
+                    
+                    <div class="panel-footer">
+                        <span class="file-name">SYS.CODE_INDEX.SYS</span>
+                        <svg class="panel-icon" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="20" y="20" width="60" height="60" />
+                            <rect x="35" y="35" width="30" height="30" />
+                            <line x1="20" y1="20" x2="35" y2="35"/>
+                            <line x1="80" y1="20" x2="65" y2="35"/>
+                            <line x1="20" y1="80" x2="35" y2="65"/>
+                            <line x1="80" y1="80" x2="65" y2="65"/>
+                        </svg>
+                    </div>
+                </div>
+            </a>
+            
+        </div>
+    </section>
