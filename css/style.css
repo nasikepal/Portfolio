@@ -690,8 +690,10 @@ textarea {
     position: absolute;
     box-sizing: border-box;
     border: 0.5px solid rgba(255, 255, 255, 0.08);
-    background: #050508;
+    background: transparent;
     overflow: hidden;
+    z-index: 20;
+    mix-blend-mode: difference;
 }
 
 .hero-tile-inner {
@@ -706,9 +708,9 @@ textarea {
     position: absolute;
     width: 100vw;
     height: 100vh;
-    background: #050508;
+    background: transparent;
     pointer-events: none;
-    transition: filter 0.4s ease;
+    transition: opacity 0.4s ease, background-color 0.4s ease;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -758,11 +760,11 @@ textarea {
     z-index: 4;
 }
 
-/* Tile Graphic Effect Classes */
-.effect-none { filter: none; }
-.effect-heatmap { filter: url(#heatmap-filter); }
-.effect-invert { filter: invert(1) contrast(1.15); }
-.effect-depth { filter: url(#depth-filter); }
+/* Tile Graphic Effects via mix-blend-mode */
+.effect-none .hero-tile-bg { background-color: transparent; }
+.effect-heatmap .hero-tile-bg { background-color: #0000ff; }
+.effect-invert .hero-tile-bg { background-color: #ffffff; }
+.effect-depth .hero-tile-bg { background-color: #ff0000; }
 .effect-ascii .hero-tile-bg { opacity: 0; }
 
 /* SVG Grid Wavy Coordinate Path */
@@ -829,7 +831,7 @@ textarea {
 .photo-corner.bl { bottom: 12px; left: 12px; }
 .photo-corner.br { bottom: 12px; right: 12px; }
 
-/* Headline Text Layer - Visually hidden, rendered dynamically inside grid tiles for multiple masking */
+/* Headline Text Layer */
 .hero-text-layer {
     position: absolute;
     inset: 0;
@@ -842,7 +844,7 @@ textarea {
     z-index: 10;
     pointer-events: none;
     background: transparent;
-    opacity: 0;
+    opacity: 1;
 }
 
 .hero-text-content {
@@ -863,6 +865,23 @@ textarea {
 
 .title-line {
     display: block;
+    animation: revealTitle 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+    transform: translateY(100%);
+    clip-path: inset(100% 0 0 0);
+}
+
+.title-line[data-line="1"] { animation-delay: 0.1s; }
+.title-line[data-line="2"] { animation-delay: 0.3s; }
+
+@keyframes revealTitle {
+    0% {
+        transform: translateY(100%);
+        clip-path: inset(100% 0 0 0);
+    }
+    100% {
+        transform: translateY(0);
+        clip-path: inset(-10% 0 -10% 0);
+    }
 }
 
 .hero-subtitle {

@@ -45,13 +45,7 @@
   let heroNode2El = null;
   let heroScannerEl = null;
 
-  // ── Sequence Player State ──
-  const START_FRAME = 102;
-  const END_FRAME = 581;
-  let currentFrameIndex = START_FRAME;
-  let lastFrameTime = 0;
-  const FRAME_INTERVAL = 1000 / 24; // Play at 24fps
-
+  // (Video processing removed for performance optimization)
   /**
    * Select a random index based on weights.
    */
@@ -72,6 +66,8 @@
     gridContainer = document.getElementById('hero-grid-tiles');
     if (!gridContainer) return;
 
+    // (Click fallback removed)
+
     // Cache SVG Line Graph Elements
     heroPathEl = document.getElementById('hero-grid-path');
     heroNode1El = document.getElementById('hero-grid-node1');
@@ -89,7 +85,7 @@
       inner.style.width = '100vw';
       inner.style.height = '100vh';
 
-      // 3. Create Background element
+      // 3. Create Background element (Pure CSS Div)
       const bg = document.createElement('div');
       bg.className = 'hero-tile-bg';
       inner.appendChild(bg);
@@ -98,27 +94,6 @@
       const pre = document.createElement('pre');
       pre.className = 'hero-tile-ascii hidden';
       inner.appendChild(pre);
-
-      // 4.5. Create duplicate text container for multiple masking text inversion inside inner wrapper
-      const textContainer = document.createElement('div');
-      textContainer.className = 'hero-tile-text-container';
-      textContainer.setAttribute('aria-hidden', 'true');
-      textContainer.innerHTML = `
-        <div class="hero-text-content">
-            <div class="hero-ascii-top" aria-hidden="true">
-                <span class="ascii-tracery-line" data-ascii="tracery">┌──────────────────────────────────┐</span>
-            </div>
-            <h1 class="hero-title">
-                <span class="title-line" data-line="1">HELLO IM</span>
-                <span class="title-line" data-line="2">ANDROMEDA</span>
-            </h1>
-            <p class="hero-subtitle">3D Artist & Motion Designer</p>
-            <div class="hero-ascii-bottom" aria-hidden="true">
-                <span class="ascii-tracery-line" data-ascii="tracery">└──────────────────────────────────┘</span>
-            </div>
-        </div>
-      `;
-      inner.appendChild(textContainer);
 
       tile.appendChild(inner);
 
@@ -236,24 +211,7 @@
     // ── Update Dynamic Line Graph ──
     updateLineGraph(now);
 
-    if (now - lastFrameTime >= FRAME_INTERVAL) {
-      currentFrameIndex++;
-      if (currentFrameIndex > END_FRAME) {
-        currentFrameIndex = START_FRAME;
-      }
-      lastFrameTime = now;
-
-      // Determine which sequence directory to use based on current frame
-      const sequenceBase = (currentFrameIndex <= 267) ? 'images/s3/S3_' : 'images/s4/S4_';
-
-      // Update background image for all tiles in sync
-      const frameNum = String(currentFrameIndex).padStart(4, '0');
-      const imageUrl = `url("${sequenceBase}${frameNum}.jpg")`;
-      
-      tileStates.forEach((state) => {
-        state.bgEl.style.backgroundImage = imageUrl;
-      });
-    }
+    // (Video frame update loop removed for performance optimization)
 
     // ── Update Grid Axes ──
     axesTimer -= 16.7;
