@@ -696,6 +696,7 @@ textarea {
     overflow: hidden;
     z-index: 20;
     mix-blend-mode: difference;
+    transition: background-color 0.4s ease;
 }
 
 .hero-tile-inner {
@@ -764,11 +765,11 @@ textarea {
 }
 
 /* Tile Graphic Effects via mix-blend-mode */
-.effect-none .hero-tile-bg { background-color: transparent; }
-.effect-heatmap .hero-tile-bg { background-color: #0000ff; }
-.effect-invert .hero-tile-bg { background-color: #ffffff; }
-.effect-depth .hero-tile-bg { background-color: #ff0000; }
-.effect-ascii .hero-tile-bg { opacity: 0; }
+.hero-tile.effect-none { background-color: transparent; }
+.hero-tile.effect-heatmap { background-color: #0000ff; }
+.hero-tile.effect-invert { background-color: #ffffff; }
+.hero-tile.effect-depth { background-color: #ff0000; }
+.hero-tile.effect-ascii { background-color: transparent; }
 
 /* SVG Grid Wavy Coordinate Path */
 .hero-grid-track {

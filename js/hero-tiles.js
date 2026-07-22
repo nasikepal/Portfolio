@@ -79,18 +79,13 @@
       const tile = document.createElement('div');
       tile.className = 'hero-tile';
 
-      // 2. Create Inner wrapper for drift transform
+      // 2. Create inner wrapper (handles the negative translation to align masked content)
       const inner = document.createElement('div');
       inner.className = 'hero-tile-inner';
       inner.style.width = '100vw';
       inner.style.height = '100vh';
 
-      // 3. Create Background element (Pure CSS Div)
-      const bg = document.createElement('div');
-      bg.className = 'hero-tile-bg';
-      inner.appendChild(bg);
-
-      // 4. Create ASCII container inside inner wrapper
+      // 3. Create Pre element for ASCII art
       const pre = document.createElement('pre');
       pre.className = 'hero-tile-ascii hidden';
       inner.appendChild(pre);
@@ -109,7 +104,6 @@
       tileStates.push({
         el: tile,
         innerEl: inner,
-        bgEl: bg,
         preEl: pre,
         canvas: canvas,
         layout: layout,
