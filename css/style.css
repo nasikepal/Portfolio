@@ -685,8 +685,7 @@ textarea {
     height: 100%;
     display: block;
     background: transparent;
-    z-index: 15;
-    mix-blend-mode: difference;
+    pointer-events: none;
 }
 
 .hero-tile {
@@ -696,6 +695,7 @@ textarea {
     background: transparent;
     overflow: hidden;
     z-index: 20;
+    mix-blend-mode: difference;
 }
 
 .hero-tile-inner {
@@ -708,6 +708,8 @@ textarea {
 
 .hero-tile-bg {
     position: absolute;
+    top: 0;
+    left: 0;
     width: 100vw;
     height: 100vh;
     background: transparent;
