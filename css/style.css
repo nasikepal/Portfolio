@@ -686,6 +686,7 @@ textarea {
     display: block;
     background: transparent;
     z-index: 15;
+    mix-blend-mode: difference;
 }
 
 .hero-tile {
@@ -695,7 +696,6 @@ textarea {
     background: transparent;
     overflow: hidden;
     z-index: 20;
-    mix-blend-mode: difference;
 }
 
 .hero-tile-inner {
@@ -867,23 +867,6 @@ textarea {
 
 .title-line {
     display: block;
-    animation: revealTitle 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
-    transform: translateY(100%);
-    clip-path: inset(100% 0 0 0);
-}
-
-.title-line[data-line="1"] { animation-delay: 0.1s; }
-.title-line[data-line="2"] { animation-delay: 0.3s; }
-
-@keyframes revealTitle {
-    0% {
-        transform: translateY(100%);
-        clip-path: inset(100% 0 0 0);
-    }
-    100% {
-        transform: translateY(0);
-        clip-path: inset(-10% 0 -10% 0);
-    }
 }
 
 .hero-subtitle {
