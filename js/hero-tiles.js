@@ -30,8 +30,8 @@
   let axesTimer = 0;
 
   // ── Effects Weighting ──
-  const EFFECTS = ['none', 'heatmap', 'invert', 'depth', 'ascii'];
-  const EFFECT_WEIGHTS = [0.45, 0.12, 0.15, 0.13, 0.15]; // Weight distribution summing to 1
+  const EFFECTS = ['none', 'heatmap', 'invert', 'depth'];
+  const EFFECT_WEIGHTS = [0.60, 0.12, 0.15, 0.13]; // Weight distribution summing to 1
 
   // ── State variables ──
   const tileStates = [];
@@ -85,11 +85,6 @@
       inner.style.width = '100vw';
       inner.style.height = '100vh';
 
-      // 3. Create Pre element for ASCII art
-      const pre = document.createElement('pre');
-      pre.className = 'hero-tile-ascii hidden';
-      inner.appendChild(pre);
-
       tile.appendChild(inner);
 
       // 5. Create offscreen canvas metadata (used to determine width/height columns)
@@ -104,7 +99,6 @@
       tileStates.push({
         el: tile,
         innerEl: inner,
-        preEl: pre,
         canvas: canvas,
         layout: layout,
         currentEffect: 'none',
@@ -123,31 +117,6 @@
 
     // Dispatch custom event indicating grid is ready for ASCII character wrapping
     document.dispatchEvent(new CustomEvent('heroGridInitialized'));
-  }
-
-  /**
-   * Real-time Random Tech ASCII Generator (No Image Dependency).
-   * Creates scrolling streams of binary, hexadecimal, and grid characters.
-   */
-  function updateAscii(state, currentFrame) {
-    // Throttle ASCII generation so it is readable and not too fast
-    if (currentFrame % 5 !== 0) return;
-
-    const cw = state.canvas.width;
-    const ch = state.canvas.height;
-    
-    let asciiStr = '';
-    const charPool = '01XY7F┌┐└┘┼+-*#=  ';
-    const poolLen = charPool.length;
-
-    for (let y = 0; y < ch; y++) {
-      for (let x = 0; x < cw; x++) {
-        asciiStr += charPool[Math.floor(Math.random() * poolLen)];
-      }
-      asciiStr += '\n';
-    }
-
-    state.preEl.textContent = asciiStr;
   }
 
   /**
@@ -254,8 +223,7 @@
       // ── Apply graphic effect tags ──
       if (state.currentEffect !== state.targetEffect) {
         // Remove old classes
-        state.el.classList.remove('effect-heatmap', 'effect-invert', 'effect-depth', 'effect-ascii');
-        state.preEl.classList.add('hidden');
+        state.el.classList.remove('effect-heatmap', 'effect-invert', 'effect-depth');
 
         state.currentEffect = state.targetEffect;
 
@@ -265,15 +233,7 @@
           state.el.classList.add('effect-invert');
         } else if (state.currentEffect === 'depth') {
           state.el.classList.add('effect-depth');
-        } else if (state.currentEffect === 'ascii') {
-          state.el.classList.add('effect-ascii');
-          state.preEl.classList.remove('hidden');
         }
-      }
-
-      // ── Render ASCII frame ──
-      if (state.currentEffect === 'ascii') {
-        updateAscii(state, frameCount);
       }
     });
 
