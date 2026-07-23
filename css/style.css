@@ -2786,6 +2786,13 @@ textarea {
 }
 
 @media (max-width: 768px) {
+    .contact-balloon.left {
+        min-width: 250px;
+        width: 65%;
+        left: -15%;
+        bottom: -5%;
+        transform: none;
+    }
     .social-links {
         flex-direction: column;
     }
